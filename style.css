@@ -1,7 +1,3 @@
-/* body {
-    overflow-x: hidden
-} */
-
 .main_title {                                                   /* 여행 어플 */
     font-size: 3rem;
     color: rgb(62, 201, 206);
@@ -13,6 +9,7 @@
 .main_mini_title {                                              /* samsung */
     margin-top: auto;
     text-align: center;
+    margin-bottom: 1%;
 }
 .main_mini_title2 {                                              /* samsung */
     font-size: 1.5rem;
@@ -20,6 +17,21 @@
     text-decoration: none;
     position: relative;
     left: 100px;
+}
+
+.top_quick_menu {                                              /* 상단 퀵 메뉴 ul */
+    list-style: none;
+    font-size: 20px;
+    float: right;
+    position: absolute;
+    align-items: center;
+    right: 5%;
+    top: 0%;
+}
+
+.top_quick_menu2 {                                              /* 상단 퀵 메뉴 li */
+    float: left;
+    margin: 10px;
 }
 
 #tm-video-container {                                           /* 메인 홈페이지 파도 동영상 */
@@ -227,7 +239,7 @@
 
 /*------------------------------------------  왼쪽 사이드 바 메뉴 ------------------------------------------*/
 
-.fa-house, .fa-magnifying-glass{													/*  사이드바 아이콘 */
+ul>li>a>.fa-house, .fa-magnifying-glass{											/*  사이드바 아이콘 */
     color: white;
 	font-size: 35px;
 	position: relative;
@@ -305,3 +317,4 @@ nav ul li > div {																	/* 사이드바 세로 간격 */
 	padding: 25px 0;
 	background: transparent;
 }
+
