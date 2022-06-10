@@ -249,6 +249,12 @@ a:link {
     height: 1230px;
     margin : auto;
 }
+.planex{
+    width: 1000px;
+    height: 820px;
+    position: relative;
+    left: 50px;
+}
 
 /*------------------------------------------  왼쪽 사이드 바 메뉴 ------------------------------------------*/
 
