@@ -1,0 +1,280 @@
+/* body {
+    overflow-x: hidden
+} */
+
+.main_title {                                                   /* 여행 어플 */
+    font-size: 3rem;
+    color: rgb(62, 201, 206);
+    text-decoration: none;
+    text-align: center;
+    margin: auto;
+}
+
+.main_mini_title {                                              /* samsung */
+    margin-top: auto;
+    text-align: center;
+}
+.main_mini_title2 {                                              /* samsung */
+    font-size: 1.5rem;
+    color: #7fb220;
+    text-decoration: none;
+    position: relative;
+    left: 100px;
+}
+
+#tm-video-container {                                           /* 메인 홈페이지 파도 동영상 */
+    max-height: 400px; 
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#tm-video {                                                     /* 메인 홈페이지 파도 동영상 홈페이지 크기 맞춤 */
+    width: 100%;
+    height: auto;
+}
+
+#tm-video-control-button {                                      /* 메인 홈페이지 파도 동영상 일시정지 */
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    color: #e1e1e1;
+}
+
+.main_container{                                                /* 메인 페이지 메인컨테이너 */
+    background-color: rgb(202, 226, 215);
+    width: 1200px;
+    height: 720px;
+    margin : auto;
+}
+.home{
+    display: flex;
+}
+.title_container{
+    height: 60px;
+    align-items: center;
+}
+.title_name_a, .title_name_b{                                   /* 메인 페이지 타이틀 a, b */
+    margin: 0;
+    font-size: 40px;
+    color: rgb(3, 97, 39);
+}
+.box{
+    width: 200px;
+    height: 180px;
+    position: relative;
+    top: 20px;
+}
+.container_1, .container_2{
+    width: 1200px;
+    height: 300px;
+    justify-content: space-evenly;
+}
+.a_text, .b_text, .c_text, .d_text, .e_text, .f_text{
+    text-align: center;
+    margin: auto;
+    position: relative;
+}
+.fa-angle-right{                                                /* 메인 html 옆으로 넘기는 아이콘 */
+    color: rgb(112, 106, 106);
+    font-size: 50px;
+    position: relative;
+    left: 930px;
+}
+.under_container{
+    width: 1200px;
+    height: 179px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*------------------------------------------  검색 html  ------------------------------------------*/
+
+.search_main_container{                                            /*검색 html 메인컨테이너*/
+    background-color: rgb(202, 226, 215);
+    width: 1200px;
+    height: 1230px;
+    margin: 0 auto;
+}
+
+.search_window_container{                                           /*검색 창 컨테이너*/
+    display: inline-flex;
+    position: relative;
+    top: 10px;
+    margin-left: 25%;
+}
+
+.search_window_container>input{                                     /*검색어 입력 창*/
+    font-size: 2em;
+    width: 500px;
+    height: 60px;
+    text-align: center;
+}
+
+.fa-search {                                                        /*검색어 입력 창 옆 돋보기 아이콘*/
+    font-size: 30px;
+    padding: 13px;
+}
+
+.search_area, .search_theme_tour, .search_season {                  /*검색 html 지역, 테마여행, 계절 폰트*/
+    font-size: 2em;
+    color: rgb(235, 110, 195);
+    margin-left: 5px;
+}
+
+.area_box_container, .theme_tour_container {                        /*검색 html 박스 컨테이너들*/
+    border: 1px solid rgb(3, 111, 130);
+    width: 1200px;
+    height: 200px;
+    display: flex;
+}
+
+.season_box_container {
+    border: 1px solid rgb(3, 111, 130);
+    width: 1200px;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.area_box_a, .area_box_b, .area_box_c, .area_box_d, .area_box_e, .theme_tour_box_a,
+.theme_tour_box_b, .theme_tour_box_c, .theme_tour_box_d, .theme_tour_box_e {                /*검색 html 지역,테마여행 박스들*/
+    border: 1px solid rgb(46, 6, 192);
+    width: 180px;
+    height: 150px;
+    margin: auto;
+}
+
+.spring, .summer, .fall, .winter {                                                          /*검색 html 날씨 박스들*/
+    width: 180px;
+    height: 150px;
+    margin: auto;
+}
+
+.spring_text, .summer_text, .fall_text, .winter_text {                                       /*검색 html 날씨 텍스트들*/
+    text-align: center;
+    margin: auto;
+    position: relative;
+    bottom: 100px;
+    font-size: 2em;
+    text-shadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);
+
+}
+
+/*------------------------------------------  상세 검색 페이지  ------------------------------------------*/
+
+.detailed_box_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.place_box_a, .place_box_b, .place_box_c, .place_box_d, .place_box_e {                         /*상세 검색 html 여행지 사진*/
+    border: 1px solid rgb(227, 32, 6);
+    width: 200px;
+    height: 180px;
+    position: relative;
+}
+
+.place_ex {                                                                                     /*상세 검색 html 여행지 설명글*/
+    margin: auto;
+    border: 1px solid rgb(128, 2, 187);
+    position: relative;
+    width: 900px;
+    height: 180px;
+    left: 1%;
+    white-space: normal;
+    -webkit-line-clamp: 5;
+    -webkit-bok-orient: vertical;
+    overflow: scroll;
+}
+
+/*------------------------------------------  여행 계획 페이지  ------------------------------------------*/
+
+.plan_main_container {
+    border: 1px solid rgb(105, 94, 9);
+    background-color: rgb(202, 226, 215);
+    width: 1200px;
+    height: 720px;
+    margin : auto;
+}
+
+/*------------------------------------------  왼쪽 사이드 바 메뉴 ------------------------------------------*/
+
+.fa-house, .fa-magnifying-glass{													/*  사이드바 아이콘 */
+    color: white;
+	font-size: 35px;
+	position: relative;
+    top: 30%;
+	left: 20%;
+}
+
+.fa-calendar-check {													            /*  사이드바 아이콘 */
+	color: white;
+	font-size: 35px;
+	position: relative;
+    top: 30%;
+	left: 25%;
+}
+
+.sidebar {
+    position: sticky;
+    top: 40px;
+	background: transparent;
+    float: left;
+    margin-left: -50px;
+    margin-top: -15px;
+}
+
+.sidebar > ul > li {																/* 사이드바 */
+	position: relative;
+	width: 70px;
+	height: 90px;
+	cursor: pointer;
+	background: rgb(255, 166, 106);
+	text-transform: uppercase;
+	transition:all .4s ease-out;
+}
+
+nav ul li:after {                      												/* 사이드바 폰트 */
+    position: absolute;
+	background: white;
+	color: rgb(255, 166, 106);
+	left: 70px;
+	width: 70px; height: 100%;
+	opacity:.5;
+	transform: perspective(400px) rotateY(90deg);
+	transform-origin: 0 100%;
+	transition:all .4s ease-out;
+}
+
+nav ul li:nth-child(1)::after {
+	content: "Home";
+	line-height: 88px;
+	text-align: center;
+}
+
+nav ul li:nth-child(2)::after {
+	content: "Search";
+	line-height: 88px;
+	text-align: center;
+}
+
+nav ul li:nth-child(3)::after {
+	content: "Plan";
+	line-height: 85px;
+	text-align: center;
+}
+
+nav ul li:hover {																	/* 사이드바 옆으로 돌아가기 */
+	transform: translateX(-70px);
+}
+
+nav ul li:hover:after {																/* 사이드바 옆으로 회전 고정? 하는거 */
+	opacity: 1;
+	transform: perspective(400px) rotateY(0deg) scale(1) ;
+}
+
+nav ul li > div {																	/* 사이드바 세로 간격 */
+	padding: 25px 0;
+	background: transparent;
+}

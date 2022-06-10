@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>검색 화면</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="templatemo-ocean-vibes.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/a5311fe65a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1 class="main_title"> <a class="main_title" href="index.html">여행 어플</a> </h1>              <!--대문짝 글자-->
+    <p class = "main_mini_title"> <a class="main_mini_title2" href="index.html">Samsung</a> </p>      <!--대문짝 작은 글자-->
+
+    <nav class = "sidebar">                                                             <!-- 슬라이드 바 -->
+        <ul>
+            <li><a href="index.html" target="_blank">
+                    <i class="fa-solid fa-house"></i>
+            </a></li>
+
+            <li><a href="search.html" target="_blank">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+            </a></li>
+
+            <li><a href="search.html" target="_blank">
+                <i class="fa-regular fa-calendar-check"></i>
+            </a></li>
+        </ul>
+    </nav>
+
+    <div class = "search_main_container">                                               <!--검색 html 컨테이너-->
+        
+        <div class = "search_window_container">
+            <input type="search" placeholder="검색어 입력">                             <!--검색 창-->
+            <button class="fas fa-search"></button>
+        </div>
+    
+        <div>
+            <p class="search_area">지역<p>                                <!--지역-->
+        </div>
+
+        <div class = "area_box_container">                                <!--지역 박스를 모은 컨테이너-->
+            <p class = "area_box_a">서울</p>                              <!--지역 박스 a-->
+            <p class = "area_box_b">제주도</p>                            <!--지역 박스 b-->
+            <p class = "area_box_c">강원도</p>                            <!--지역 박스 c-->
+            <p class = "area_box_d">부산</p>                              <!--지역 박스 d-->
+            <p class = "area_box_e">경주</p>                              <!--지역 박스 e-->
+        </div>
+
+        <div>
+            <p class="search_theme_tour">테마여행<p>                      <!--테마여행-->
+        </div>
+
+        <div class = "theme_tour_container">                              <!--테마여행 박스를 모은 컨테이너-->
+            <p class = "theme_tour_box_a">연인</p>                            <!--테마여행 박스 a-->
+            <p class = "theme_tour_box_b">전망대</p>                            <!--테마여행 박스 b-->
+            <p class = "theme_tour_box_c">드라이브</p>                            <!--테마여행 박스 c-->
+            <p class = "theme_tour_box_d">아이와함께</p>                            <!--테마여행 박스 d-->
+            <p class = "theme_tour_box_e">반려견</p>                            <!--테마여행 박스 e-->
+        </div>
+        <div>
+            <p class="search_season">계절<p>                              <!--계절-->
+        </div>
+
+        <div class = "season_box_container">                              <!--계절 박스를 모은 컨테이너-->
+            <figure>
+                <img src="img/spring.jpg" alt="Image" class="spring" />   <!--봄 이미지-->
+                <figcaption>
+                    <h3 class="spring_text">봄</h3>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img src="img/summer.jpg" alt="Image" class="summer" />   <!--여름 이미지-->
+                <figcaption>
+                    <h3 class="summer_text">여름</h3>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img src="img/fall.jpg" alt="Image" class="fall" />   <!--가을 이미지-->
+                <figcaption>
+                    <h3 class="fall_text">가을</h3>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img src="img/winter.jpg" alt="Image" class="winter" />   <!--겨울 이미지-->
+                <figcaption>
+                    <h3 class="winter_text">겨울</h3>
+                </figcaption>
+            </figure>
+        </div>
+
+    </div>                                                              <!--검색 페이지 컨테이너 끝-->
+
+</body>
+</html>
