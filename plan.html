@@ -37,18 +37,20 @@
     </nav>
 
     <div class = "plan_main_container">                                                 <!--계획 페이지 컨테이너-->
-            <div id="map"></div>                    <!--e 이미지박스-->       
+        <div id="map" style="width:100vh; height: 600px;"></div>                                             <!--e 이미지박스-->       
     </div>
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=bda722488ae188a7876d2797167e0c61"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbnB-hAvTv468pbzOsnV0HgulEjq028gg&callback=initMap&region=kr"></script>
     <script>
-		var container = document.getElementById('map');
-		var options = {
-			center: new kakao.maps.LatLng(33.450701, 126.570667),
-			level: 3
-		};
-
-		var map = new kakao.maps.Map(container, options);
-	</script>
+        function initMap() {
+          var seoul = { lat: 37.5642135 ,lng: 127.0016985 };
+          var map = new google.maps.Map(
+            document.getElementById('map'), {
+              zoom: 12,
+              center: seoul
+            });
+          
+        }
+      </script>
     <!--계획 페이지 컨테이너 끝-->
 </body>
 </html>
