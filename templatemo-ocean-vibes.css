@@ -145,11 +145,6 @@
 }
 
 @media (max-width: 558px) {
-    . {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
     .tm-tagline {
         margin-left: 30px;
     }
