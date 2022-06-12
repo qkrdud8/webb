@@ -37,11 +37,18 @@
     </nav>
 
     <div class = "plan_main_container">                                                 <!--계획 페이지 컨테이너-->
-        
-        <figure>
-            <img src="img/planex.jpg" alt="Image" class="planex" />                    <!--e 이미지박스-->
-        </figure>
-        
-    </div>                                                                              <!--계획 페이지 컨테이너 끝-->
+            <div id="map"></div>                    <!--e 이미지박스-->       
+    </div>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=cca6538ae5c622cf93d4f0d19693c520"></script>
+    <script>
+		var container = document.getElementById('map');
+		var options = {
+			center: new kakao.maps.LatLng(33.450701, 126.570667),
+			level: 3
+		};
+
+		var map = new kakao.maps.Map(container, options);
+	</script>
+    <!--계획 페이지 컨테이너 끝-->
 </body>
 </html>

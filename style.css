@@ -317,6 +317,9 @@ a:link {
     position: relative;
     left: 50px;
 }
+#map{
+    z-index: 999;
+}
 
 /*------------------------------------------  왼쪽 사이드 바 메뉴 ------------------------------------------*/
 
@@ -354,48 +357,3 @@ ul>li>a>.fa-house, .fa-magnifying-glass{											/*  사이드바 아이콘 */
 	text-transform: uppercase;
 	transition:all .4s ease-out;
 }
-
-nav ul li:after {                      												/* 사이드바 폰트 */
-    position: absolute;
-	background: white;
-	color: rgb(255, 166, 106);
-	left: 70px;
-	width: 70px; height: 100%;
-	opacity:.5;
-	transform: perspective(400px) rotateY(90deg);
-	transform-origin: 0 100%;
-	transition:all .4s ease-out;
-}
-
-nav ul li:nth-child(1)::after {
-	content: "Home";
-	line-height: 88px;
-	text-align: center;
-}
-
-nav ul li:nth-child(2)::after {
-	content: "Search";
-	line-height: 88px;
-	text-align: center;
-}
-
-nav ul li:nth-child(3)::after {
-	content: "Plan";
-	line-height: 85px;
-	text-align: center;
-}
-
-nav ul li:hover {																	/* 사이드바 옆으로 돌아가기 */
-	transform: translateX(-70px);
-}
-
-nav ul li:hover:after {																/* 사이드바 옆으로 회전 고정? 하는거 */
-	opacity: 1;
-	transform: perspective(400px) rotateY(0deg) scale(1) ;
-}
-
-nav ul li > div {																	/* 사이드바 세로 간격 */
-	padding: 25px 0;
-	background: transparent;
-}
-
