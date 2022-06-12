@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>슬라이더 연습장</title>
+    <style>
+        .container_1 , .container_2 {
+            margin: 0;
+            width: 300px;
+            float: left;
+        }
+        .container_1_in_container,  .container_2_in_container{
+            transition: transform 1s;
+        }
+        .container_2 {
+            display: none;
+            position: absolute;
+            bottom: 460px;
+        }
+        .inner {
+            width: 100vw;
+        }
+        .inner img {
+            height: 300px;
+            width: 300px;
+        }
+
+        .버튼1, .버튼2 {
+            width: 120px;
+            height: 120px;
+            position: absolute;
+            left: 400px;
+        }
+        .버튼2 {
+            width: 120px;
+            height: 120px;
+            position: absolute;
+            left: 520px;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div style="overflow: hidden">
+        <div class="home container_1">
+            <div class = "home container_1_in_container">
+                <div class="inner">
+                    <img src="img/img_a.jpg">
+                    <img src="img/img_b.jpg">
+                    <img src="img/img_c.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="home container_2">
+            <div class = "home container_2_in_container">
+                <div class="inner">
+                    <img src="img/img_d.jpg">
+                    <img src="img/img_e.jpg">
+                    <img src="img/img_f.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <button class="left_arrow_1 버튼1">1</button>
+    <button class="right_arrow_1 버튼2">2</button>
+
+    <script>
+
+        document.querySelector('.left_arrow_1').addEventListener('click', function(){
+            document.querySelector('.container_1_in_container').style.transform = 
+            'translate(0vw)'
+            document.querySelector('.container_2_in_container').style.transform = 
+            'translate(100vw)'
+        })
+
+        document.querySelector('.right_arrow_1').addEventListener('click', function(){
+            document.querySelector('.container_1_in_container').style.transform = 
+            'translate(-100vw)'
+            document.querySelector('.container_2_in_container').style.transform = 
+            'translate(0vw)'
+            document.querySelector('.container_2').style.display = 
+                    'block'
+
+        })
+
+
+
+    </script>
+</body>
+</html>
