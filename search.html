@@ -11,10 +11,10 @@
 </head>
 
 <body>
-    <h1 class="main_title"> <a class="main_title" href="index.html">여행 어플</a> </h1>                 <!--대문짝 글자-->
-    <p class = "main_mini_title"> <a class="main_mini_title2" href="index.html">Samsung</a> </p>        <!--대문짝 작은 글자-->
+    <h1 class="main_title"> <a class="main_title" href="index.html">여행 어플</a> </h1>                  <!-- 대문짝 글자 -->
+    <p class = "main_mini_title"> <a class="main_mini_title2" href="index.html">Samsung</a> </p>        <!-- 대문짝 작은 글자 -->
 
-    <ul class = top_quick_menu>                                                                                                  <!-- 맨위 퀵 메뉴 -->
+    <ul class = top_quick_menu>                                                                         <!-- 맨위 퀵 메뉴 -->
         <li class = top_quick_menu2><a href="index.html"> <span><i class="fa-solid fa-house"></i></span>홈으로</a></li>
         <li class = top_quick_menu2><a href="index.html"> <span><i class="fa-solid fa-right-to-bracket"></i></span>로그인</a></li>
         <li class = top_quick_menu2><a href="index.html"> <span><i class="fa-solid fa-user-plus"></i></span>회원가입</a></li>
@@ -36,13 +36,30 @@
         </ul>
     </nav>
 
-    <div class = "search_main_container">                                               <!--검색 html 컨테이너-->
+    <div class = "search_main_container">                                               <!-- 검색 html 컨테이너 -->
         
         <div class = "search_window_container">
-            <input type="search" placeholder="검색어 입력">                             <!--검색 창-->
+            <input type="search" placeholder="검색어 입력">                             <!-- 검색 창 -->
             <button class="fas fa-search"></button>
         </div>
     
+
+        <div class = "google_map">                                                      <!-- 지도 컨테이너 -->
+            <div id="map"></div>                                                        <!-- id 맵 -->       
+        </div>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbnB-hAvTv468pbzOsnV0HgulEjq028gg&callback=initMap&region=kr"></script>
+        <script>
+            function initMap() {
+              var seoul = { lat: 37.5642135 ,lng: 127.0016985 };
+              var map = new google.maps.Map(
+                document.getElementById('map'), {
+                  zoom: 12,
+                  center: seoul
+                });
+              
+            }
+        </script>
+
         <div>
             <p class="search_area">지역<p>                                              <!--지역-->
         </div>

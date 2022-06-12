@@ -98,28 +98,40 @@ a:link {
     top: 20px;
 }
 
-.container_1, .container_3{                                   /* 메인 html a, b, c, g, h, i 사진이 있는 컨테이너 */
-    border: 1px solid rgb(27, 0, 144);
+.container_1, .container_3 {                                              /* 메인 html a, b, c, g, h, i 사진이 있는 컨테이너 */
+    /* border: 1px solid rgb(27, 0, 144); */
     margin: auto;
     width: 1100px;
     height: 300px;
 }
 
-.container_2 {                                                 /* 메인 html d, e, f 사진이 있는 컨테이너 */
-    border: 1px solid rgb(120, 1, 1);
+.container_2, .container_4 {                                              /* 메인 html d, e, f, j, k, l 사진이 있는 컨테이너 */
+    /* border: 1px solid rgb(120, 1, 1); */
     margin: auto;
     width: 1100px;
     height: 300px;
     display: none;
 }
 
-.container_1_in_container {
+.container_1_in_container {                                    /* 메인 html a, b, c 사진이 있는 컨테이너 */
     width: 100%;
     justify-content: space-evenly;
     transition: 1s;
 }
 
-.container_2_in_container {
+.container_2_in_container {                                    /* 메인 html d, e, f 사진이 있는 컨테이너 */
+    width: 100%;
+    justify-content: space-evenly;
+    transition: 1s;
+}
+
+.container_3_in_container {                                    /* 메인 html g, h, i 사진이 있는 컨테이너 */
+    width: 100%;
+    justify-content: space-evenly;
+    transition: 1s;
+}
+
+.container_4_in_container {                                    /* 메인 html j, k, l 사진이 있는 컨테이너 */
     width: 100%;
     justify-content: space-evenly;
     transition: 1s;
@@ -181,7 +193,7 @@ a:link {
 .search_main_container{                                                                     /*검색 html 메인컨테이너*/
     background-color: #faffe6;
     width: 1200px;
-    height: 1230px;
+    height: 1585px;
     margin: 0 auto;
 }
 
@@ -192,33 +204,41 @@ a:link {
     margin-left: 25%;
 }
 
-.search_window_container>input{                                                             /*검색어 입력 창*/
+.search_window_container>input{                                                             /* 검색어 입력 창 */
     font-size: 2em;
     width: 500px;
     height: 60px;
     text-align: center;
 }
 
-.fa-search {                                                                                /*검색어 입력 창 옆 돋보기 아이콘*/
+.fa-search {                                                                                /* 검색어 입력 창 옆 돋보기 아이콘 */
     font-size: 30px;
     padding: 13px;
 }
 
-.search_area, .search_theme_tour, .search_season {                                          /*검색 html 지역, 테마여행, 계절 폰트*/
+#map {                                                                                      /* 구글 지도 */
+    margin: auto;
+    position: relative;
+    top: 30px;
+    width: 97%;
+    height: 600px;
+}
+
+.search_area, .search_theme_tour, .search_season {                                          /* 검색 html 지역, 테마여행, 계절 폰트 */
     font-size: 2em;
     color: rgb(235, 110, 195);
     margin-left: 5px;
 }
 
-.area_box_container, .theme_tour_container {                                                /*검색 html 지역, 테마여행 컨테이너*/
-    border: 1px solid rgb(222, 28, 28);
+.area_box_container, .theme_tour_container {                                                /* 검색 html 지역, 테마여행 컨테이너 */
+    /* border: 1px solid rgb(222, 28, 28); */
     width: 1200px;
     height: 200px;
     display: flex;
 }
 
 .season_box_container {                                                                     /*검색 html 계절 컨테이너*/
-    border: 1px solid rgb(143, 31, 180);
+    /* border: 1px solid rgb(143, 31, 180); */
     width: 1200px;
     height: 200px;
     display: flex;
@@ -282,8 +302,9 @@ a:link {
     flex-direction: column;
 }
 
-.place_box_a, .place_box_b, .place_box_c, .place_box_d, .place_box_e {                         /*상세 검색 html 여행지 사진*/
-    border: 1px solid rgb(227, 32, 6);
+.place_box_a, .place_box_b, .place_box_c, .place_box_d, 
+.place_box_e, .place_box_f, .place_box_g {                         /*상세 검색 html 여행지 사진*/
+    /* border: 1px solid rgb(227, 32, 6); */
     width: 200px;
     height: 180px;
     position: relative;
@@ -291,7 +312,7 @@ a:link {
 
 .place_ex {                                                                                     /*상세 검색 html 여행지 설명글*/
     margin: auto;
-    border: 1px solid rgb(128, 2, 187);
+    /* border: 1px solid rgb(128, 2, 187); */
     position: relative;
     width: 900px;
     height: 180px;
