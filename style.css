@@ -73,40 +73,102 @@ a:link {
     height: 720px;
     margin : auto;
 }
+
 .home{
     display: flex;
 }
+
 .title_container{
     height: 60px;
     align-items: center;
 }
+
 .title_name_a, .title_name_b{                                   /* 메인 html 타이틀 a, b */
-    margin: 0;
+    margin: auto;
+    position: relative;
+    right: 40px;
     font-size: 40px;
     color: rgb(3, 97, 39);
 }
+
 .box{
     width: 200px;
     height: 180px;
     position: relative;
     top: 20px;
 }
-.container_1, .container_2{
-    width: 1200px;
+
+.container_1, .container_3{                                   /* 메인 html a, b, c, g, h, i 사진이 있는 컨테이너 */
+    border: 1px solid rgb(27, 0, 144);
+    margin: auto;
+    width: 1100px;
     height: 300px;
-    justify-content: space-evenly;
 }
-.a_text, .b_text, .c_text, .d_text, .e_text, .f_text{
+
+.container_2 {                                                 /* 메인 html d, e, f 사진이 있는 컨테이너 */
+    border: 1px solid rgb(120, 1, 1);
+    margin: auto;
+    width: 1100px;
+    height: 300px;
+    display: none;
+}
+
+.container_1_in_container {
+    width: 100%;
+    justify-content: space-evenly;
+    transition: 1s;
+}
+
+.container_2_in_container {
+    width: 100%;
+    justify-content: space-evenly;
+    transition: 1s;
+}
+
+.a_text, .b_text, .c_text, .d_text, .e_text, .f_text, .g_text, .h_text, .i_text{
     text-align: center;
     margin: auto;
     position: relative;
 }
-.fa-angle-right{                                                /* 메인 html 옆으로 넘기는 아이콘 */
+
+.left_arrow_1{                                                /* 메인 html name a 의 왼쪽으로 넘기는 아이콘 */
     color: rgb(112, 106, 106);
     font-size: 50px;
     position: relative;
-    left: 930px;
+    top: 180px;
+    left: 60px;
+    z-index: 1;
+    /* border: transparent; */
 }
+
+.right_arrow_1{                                                /* 메인 html name a 의 오른쪽으로 넘기는 아이콘 */
+    color: rgb(112, 106, 106);
+    font-size: 50px;
+    position: relative;
+    left: 1060px;
+    top: 180px;
+    z-index: 1;
+    /* border: transparent; */
+}
+
+.left_arrow_2{                                                 /* 메인 html name b 의 왼쪽으로 넘기는 아이콘 */
+    color: rgb(112, 106, 106);
+    font-size: 50px;
+    position: relative;
+    top: 180px;
+    left: 60px;
+    /* border: transparent; */
+}
+
+.right_arrow_2{                                                /* 메인 html name b 의 오른쪽으로 넘기는 아이콘 */
+    color: rgb(112, 106, 106);
+    font-size: 50px;
+    position: relative;
+    left: 1060px;
+    top: 180px;
+    /* border: transparent; */
+}
+
 .under_container{
     width: 1200px;
     height: 179px;
