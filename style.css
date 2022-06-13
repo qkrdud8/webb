@@ -98,14 +98,14 @@ a:link {
     top: 20px;
 }
 
-.container_1, .container_3 {                                              /* 메인 html a, b, c, g, h, i 사진이 있는 컨테이너 */
+.container_1, .container_3 {                                      /* 메인 html a, b, c, g, h, i 사진이 있는 컨테이너 */
     /* border: 1px solid rgb(27, 0, 144); */
     margin: auto;
     width: 1100px;
     height: 300px;
 }
 
-.container_2, .container_4 {                                              /* 메인 html d, e, f, j, k, l 사진이 있는 컨테이너 */
+.container_2, .container_4 {                                      /* 메인 html d, e, f, j, k, l 사진이 있는 컨테이너 */
     /* border: 1px solid rgb(120, 1, 1); */
     margin: auto;
     width: 1100px;
@@ -137,7 +137,7 @@ a:link {
     transition: 1s;
 }
 
-.a_text, .b_text, .c_text, .d_text, .e_text, .f_text, .g_text, .h_text, .i_text{
+.a_text, .b_text, .c_text, .d_text, .e_text, .f_text, .g_text, .h_text, .i_text, .j_text, .k_text, .l_text {
     text-align: center;
     margin: auto;
     position: relative;
